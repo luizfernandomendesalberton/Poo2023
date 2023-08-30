@@ -16,8 +16,7 @@ public class Time {
 			Jogador j = new Jogador();
 			j.cadastrar();
 			jogadores.add(j);
-			continua = JOptionPane
-					.showInputDialog("Mais jogadores? S/N");
+			continua = JOptionPane.showInputDialog("Mais jogadores? S/N");
 		}while(continua.equalsIgnoreCase("S"));
 	}
 	
@@ -37,6 +36,12 @@ public class Time {
 			}
 		}
 		return art;
+	}
+	public int totalGols() {
+		int gols= 0;
+		for(Jogador j: jogadores) {
+			gols += j.getGols();
+		}return gols;
 	}
 	
 	public String getNome() {

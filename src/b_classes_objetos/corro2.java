@@ -3,7 +3,6 @@ package b_classes_objetos;
 import java.util.ArrayList;
 
 import javax.swing.JOptionPane;
-import javax.swing.text.html.HTMLDocument.HTMLReader.ParagraphAction;
 
 public class corro2 {
 	public static void main(String[] args) {
