@@ -42,15 +42,6 @@ public class Contratar {
 	   return Didade;
 	}
 	
-	
-	
-	public String getNome() {
-		return Nome;
-	}
-
-	public void setNome(String nome) {
-		this.Nome = nome;
-	}
 
 	public int getIdade() {
 		return Idade;

@@ -24,20 +24,28 @@ public class autor {
 	     }
 	     public String exibir() {
 	    	
-	    	 return getNome() + "-" + getIdade() + "-" + getSexo() + getfilho() + "-" +
+	    	 return getNome() + "-" + getIdade() + "-" + getSexo() + getFilho() + "-" +
 	    	 getIdadefilho() + "\n";
 	     }
 		public String getNome() {
 			return Nome;
 		}
 		public void setNome(String nome) {
+			
 			this.Nome = nome;
 		}
 		public String getSexo() {
+			
 			return Sexo;
 		}
 		public void setSexo(String sexo) {
+			if(Sexo.equalsIgnoreCase("masculino") || Sexo.equalsIgnoreCase("feminino")) {
+				
+			
 			this.Sexo = sexo;
+			}else {
+				JOptionPane.showInternalMessageDialog(null, "nao confere so pode masculino e feminino");
+			}
 		}
 		public int getIdade() {
 			return Idade;
