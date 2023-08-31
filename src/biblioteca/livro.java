@@ -12,7 +12,7 @@ public class livro {
       
 	public void cadastrarlivros() {
 		setCustolivro(Double.parseDouble(JOptionPane.showInputDialog("imforme o preco do livro")));
-		setAutorlivro(JOptionPane.showInputDialog("nome do autor do livro"));
+		setAutorlivro(JOptionPane.showInputDialog("titulo do livro"));
 		int qt = Integer.parseInt(JOptionPane.showInputDialog("quantidade de autores que deseja cadastrar"));
 		
 		if(qt < 4) {
@@ -23,6 +23,12 @@ public class livro {
 		}
 		}
 	}
+	public String exibirlivro() {
+	return getAutorlivro() + "  "+" R$"+ getCustolivro();
+	}
+	public String exibirc() {
+		return getCustolivro() + " ";
+		}
 
 	public ArrayList<autor> getAutores() {
 		return autores;
@@ -60,4 +66,4 @@ public class livro {
     
 	}
 	
-}
+
