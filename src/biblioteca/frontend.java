@@ -67,8 +67,9 @@ public class frontend {
 					}
 				}
 			}
-			}	
 			JOptionPane.showInternalMessageDialog(null, resultado);
+			}	
+			
 			
 		}while(op!=6);
 		}	
